@@ -1,0 +1,48 @@
+@font-face {
+    font-family: trainStation;
+    src: url("../fonts/penn-station/PennStation.ttf");    
+}
+
+body {
+    font-family: trainStation;
+    background: url("https://images2.alphacoders.com/840/thumb-1920-840278.jpg");
+}
+
+h1 {
+    font-size: 3em;
+}  
+
+p {
+    font-size: 1.2em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+.container {
+    background-color: transparent;
+}
+
+.jumbotron {
+    border: 2px black solid;
+    border-radius: 30px;
+    background-color: beige;
+    text-align: center;
+}
+
+.div {
+    border: 2px black solid;
+    border-radius: 30px;
+    background-color: beige;
+}
+
+#submit {
+    margin-top: 10px;
+    background-color: saddlebrown;
+    border: gold solid 1px;
+}
+
+#trainSchedule {
+    padding-top: -50px;
+}

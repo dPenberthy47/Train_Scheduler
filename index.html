@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--meta tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--title-->
+        <title>Train Scheduler Site</title>
+        <!--bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+        <!--css links-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!--jQUery-->
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+        <!--moment.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+        <!--Firebase-->
+        <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+        
+    </head>
+    <body>
+        <div class="container col-md-9">
+
+            <div class="jumbotron div">
+                <div id="jumbotronContent">
+                    <h1>All Aboard!!!</h1>
+                    <p>Enter in your trains information to track it!</p>
+                </div>
+            </div>
+
+            <!--Train information div-->
+            <div class="col-md-12 div">
+                <!--Table which will be created upon each train submission-->
+                <table class="table">
+                    <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency (Min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                    </tr>
+                        <tbody id="tableBody">
+        
+                        </tbody>
+                </table>
+            </div>
+
+        <br>
+        
+            <div class="row">
+                <div class="col-md-12 div">
+                    <!--header-->
+                    <h3>Submit a train!</h3>
+                    <!--form area-->
+                    <div class="form-group formText">
+                        <label for="trainName">Train Name</label>
+                        <input type="text" class="form-control formFields" id="trainName" placeholder="Thomas the Tank Engine">
+    
+                        <label for="destination">Destination</label>
+                        <input type="text" class="form-control formFields" id="destination" placeholder="To War">
+    
+                        <label for="firstTrain">First Train Time</label>
+                        <input type="text" class="form-control formFields" id="firstTrain" placeholder="(HH:mm - Military Time)">
+    
+                        <label for="frequency">Frequency</label>
+                        <input type="text" class="form-control formFields" id="frequency" placeholder="In minutes">
+    
+                        <button type="button" id="submit" class="btn btn-primary btn-md">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--train form div-->
+            
+
+        </div>
+
+        <!--Javascript Link-->
+        <script src="assets/javascript/site.js"></script>
+    </body>
+</html>
